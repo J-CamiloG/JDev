@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { useTranslation } from 'react-i18next'
 import { Translations } from '@/types/i18n'
+import { images } from '@/utils/index'; 
+
 
 export function Header() {
   const { t } = useTranslation<keyof Translations>()
@@ -36,7 +38,7 @@ export function Header() {
           className="text-xl font-semibold mt-2 text-gray-300 flex items-center gap-2 flex-wrap"
         >
           <span className="flex items-center gap-1"><Code className="w-5 h-5" /> {t('fullStackDev')}</span>
-          <span className="flex items-center gap-1"><Zap className="w-5 h-5" /> {t('uiuxEnthusiast')}</span>
+          <span className="flex items-center gap-1"><Zap className="w-5 h-5" /> {t('Enthusiast')}</span>
           <span className="flex items-center gap-1"><Globe className="w-5 h-5" /> {t('webCreator')}</span>
         </motion.div>
         <motion.p
@@ -56,7 +58,7 @@ export function Header() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button variant="outline" size="icon" className="text-white" onClick={() => window.open('/tu-cv.pdf', '_blank')}>
+                <Button variant="outline" size="icon" className="text-black" onClick={() => window.open('/tu-cv.pdf', '_blank')}>
                   <Download className="h-4 w-4" />
                   <span className="sr-only">{t('downloadCV')}</span>
                 </Button>
@@ -69,7 +71,7 @@ export function Header() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button variant="outline" size="icon" className="text-white" onClick={() => window.open('https://linkedin.com/in/tu-perfil', '_blank')}>
+                <Button variant="outline" size="icon" className="text-black" onClick={() => window.open('https://www.linkedin.com/in/juan-camilo-campillo-17a126232/', '_blank')}>
                   <Linkedin className="h-4 w-4" />
                   <span className="sr-only">{t('visitLinkedIn')}</span>
                 </Button>
@@ -82,7 +84,7 @@ export function Header() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button variant="outline" size="icon" className="text-white" onClick={() => window.open('https://github.com/tu-usuario', '_blank')}>
+                <Button variant="outline" size="icon" className="text-black" onClick={() => window.open('https://github.com/J-CamiloG', '_blank')}>
                   <Github className="h-4 w-4" />
                   <span className="sr-only">{t('visitGitHub')}</span>
                 </Button>
@@ -101,7 +103,7 @@ export function Header() {
         className="relative w-48 h-48 mt-8 md:mt-0 rounded-full overflow-hidden border-4 border-violet-500 shadow-lg shadow-violet-500/50"
       >
         <Image
-          src="/placeholder.svg?height=192&width=192"
+          src={images.profile}
           alt={t('name')}
           layout="fill"
           objectFit="cover"
