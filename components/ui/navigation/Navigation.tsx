@@ -1,18 +1,12 @@
 import { motion } from 'framer-motion'
-import { Home, User, Briefcase, Award, Mail } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
-import { Translations } from '@/types/i18n'
+import { navItems } from '@/data/index';
+import { useTranslation } from 'react-i18next';
+import { Translations } from '@/types/i18n';
 
 export function Navigation() {
-  const { t } = useTranslation<keyof Translations>()
+  const { t } = useTranslation<keyof Translations>();
 
-  const navItems = [
-    { icon: Home, label: t('home') },
-    { icon: User, label: t('aboutMe') },
-    { icon: Briefcase, label: t('projects') },
-    { icon: Award, label: t('achievements') },
-    { icon: Mail, label: t('contact') },
-  ]
+  const items = navItems(t);
 
   return (
     <motion.nav
@@ -21,10 +15,10 @@ export function Navigation() {
       transition={{ duration: 0.5, delay: 1 }}
       className="flex justify-center gap-6 z-10 mt-12"
     >
-      {navItems.map((item, index) => (
+      {items.map((item ) => (
         <motion.a
           key={item.label}
-          href={`#${item.label.toLowerCase()}`}
+          href={`${item.label.toLowerCase()}`} 
           className="flex flex-col items-center group"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
