@@ -19,7 +19,7 @@ export default function Component() {
     // Simular tiempo de carga
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 2000)
+    }, 1000)
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove)
