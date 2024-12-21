@@ -8,7 +8,7 @@ export function Navigation() {
 
   const navItems = [
     { icon: Home, label: t('home') },
-    { icon: User, label: t('aboutMe') },
+    { icon: User, label: t('about') },
     { icon: Briefcase, label: t('projects') },
     { icon: Award, label: t('achievements') },
     { icon: Mail, label: t('contact') },
@@ -24,7 +24,7 @@ export function Navigation() {
       {navItems.map((item, index) => (
         <motion.a
           key={item.label}
-          href={`#${item.label.toLowerCase()}`}
+          href={`${item.label.toLowerCase()}`}
           className="flex flex-col items-center group"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
