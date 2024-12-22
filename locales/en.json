@@ -1,6 +1,6 @@
 {
     "welcome": "Welcome, I'm",
-    "name": "Your Name",
+    "name": "Juan Camilo Campillo",
     "fullStackDev": "Full-Stack Developer",
     "uiuxEnthusiast": "UI/UX Enthusiast",
     "webCreator": "Web Creator",
@@ -20,21 +20,41 @@
     "aboutSubtitle": "Developer & Tech Enthusiast",
     "myStory": "My Story",
     "education": "Education",
-    "experience": "Experience",
-    "contributions": "Contributions",
-    "university": "National University",
-    "degree": "Software Engineering",
-    "graduationYear": "2020",
     "workExperience": "Work Experience",
-    "currentlyWorking": "Currently working at",
-    "previouslyWorked": "Previously at",
-    "myContributions": "My Contributions",
-    "contributionsDescription": "Active contributions to open source projects",
-    "skills": "Skills",
-    "watchVideo": "Watch my intro video",
+    "degree": "Computer Science",
+    "university": "National University",
+    "graduationYear": "2020",
     "frontendCert": "Frontend Certification",
     "cloudCert": "Cloud Certification",
-    "storyPart1": "Passionate about technology from an early age, I began my journey in web development by building small projects that soon turned into real solutions.",
-    "storyPart2": "My curiosity for new technologies has led me to explore various fields, from frontend development to systems architecture.",
-    "storyPart3": "Today, I dedicate myself to creating exceptional digital experiences and sharing my knowledge with the community."
+    "storyCard1": {
+        "title": "My Beginning",
+        "description": "Passionate about technology from an early age, I began my journey in web development by building small projects that soon turned into real solutions."
+    },
+    "storyCard2": {
+        "title": "My Evolution",
+        "description": "My curiosity for new technologies has led me to explore various fields, from frontend development to systems architecture."
+    },
+    "storyCard3": {
+        "title": "My Present",
+        "description": "Today, I dedicate myself to creating exceptional digital experiences and sharing my knowledge with the community."
+    },
+    "work": {
+        "currentRole": "Senior Frontend Developer",
+        "currentCompany": "Current Company",
+        "currentPeriod": "2022 - Present",
+        "currentDescription": "Development of modern web applications using React, Next.js and TypeScript. Technical leadership in key projects.",
+        "previousRole": "Frontend Developer",
+        "previousCompany": "Previous Company",
+        "previousPeriod": "2020 - 2022",
+        "previousDescription": "Implementation of responsive user interfaces and web application performance optimization."
+    },
+    "video": {
+        "play": "Play",
+        "pause": "Pause"
+    },
+    "buttons": {
+        "history": "My Story",
+        "education": "Education",
+        "work": "Experience"
+    }
 }
