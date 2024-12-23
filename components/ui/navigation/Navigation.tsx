@@ -20,13 +20,13 @@ export function Navigation() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 w-full  backdrop-blur-sm">
-      <div className="absolute inset-0 bg-gradient-to-r from-violet-500/10 via-fuchsia-500/10 to-transparent pointer-events-none" />
+    <nav className="sticky top-0 z-50 w-full backdrop-blur-sm">
+      <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-transparent pointer-events-none" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Left side - Logo and Desktop Navigation */}
           <div className="flex items-center gap-8">
-            <Ghost className="w-8 h-8 text-violet-500" />
+            <Ghost className="w-8 h-8 text-emerald-500" />
             
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-1">
@@ -50,7 +50,7 @@ export function Navigation() {
               <SheetContent side="left" className="w-72 bg-gray-900/95 backdrop-blur-md border-gray-800">
                 <div className="flex items-center justify-between pt-4 pb-8">
                   <div className="flex items-center gap-4">
-                    <Ghost className="w-8 h-8 text-violet-500" />
+                    <Ghost className="w-8 h-8 text-emerald-500" />
                     <h2 className="text-lg font-semibold">Menu</h2>
                   </div>
                   {/* Language Switcher in Mobile Menu */}
@@ -63,7 +63,7 @@ export function Navigation() {
                     <Button
                       key={link.href}
                       variant="ghost"
-                      className="justify-start gap-3 text-lg hover:text-violet-400 hover:bg-violet-500/10"
+                      className="justify-start gap-3 text-lg hover:text-emerald-400 hover:bg-emerald-500/10"
                       onClick={() => setIsOpen(false)}
                     >
                       <link.icon className="h-5 w-5" />
