@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Navigation } from '@/components/ui/navigation/Navigation';
-import { LanguageSwitcher } from '@/components/ui/language/LanguageSwitcher';
 import { Button } from "@/components/ui/button"
 import { Ghost, Play, Pause, History, BookOpen, Building } from 'lucide-react'
 import HistorySection from '@/components/ui/about/HistorySection'
@@ -63,14 +62,13 @@ export default function AboutPage() {
     <div className="min-h-screen bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center">
           <Navigation />
-          <LanguageSwitcher />
         </div>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
           className="flex items-center gap-4 mb-12"
         >
           <Ghost className="w-8 h-8 text-violet-500" />
@@ -85,7 +83,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
               className="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-900 max-w-md group"
             >
               <video

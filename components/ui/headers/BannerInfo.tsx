@@ -8,7 +8,7 @@ import { Translations } from '@/types/i18n'
 import { images } from '@/utils/index'; 
 
 
-export function Header() {
+export function BannerInfo () {
   const { t } = useTranslation<keyof Translations>()
 
   return (
