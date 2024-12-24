@@ -21,7 +21,7 @@ export function LanguageSwitcher() {
           key={lang}
           variant="ghost"
           size="sm"
-          className={`text-white hover:text-white hover:bg-purple-300 ${i18n.language === lang ? 'bg-purple-600 text-white' : ''}`}
+          className={`text-white hover:text-white hover:bg-emerald-300 ${i18n.language === lang ? 'bg-emerald-600 text-white' : ''}`}
           onClick={() => changeLanguage(lang)}
         >
           {lang.toUpperCase()}
