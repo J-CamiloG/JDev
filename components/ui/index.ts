@@ -10,3 +10,5 @@ export * from './language/LanguageSwitcher';
 export * from './navigation/Navigation';
 export * from './sheet';
 export * from './tooltip';
+export * from './Home/InformationProfile';
+export * from './Home/NewsProfile';
