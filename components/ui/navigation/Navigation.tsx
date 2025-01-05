@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link';
 import { useTranslation } from 'react-i18next'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
@@ -30,16 +31,16 @@ export function Navigation() {
             
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-1">
-              {links.map((link) => (
-                <Button
-                  key={link.href}
-                  variant="ghost"
-                  className="text-gray-400 hover:text-white gap-2"
-                >
-                  <link.icon className="h-4 w-4" />
-                  {link.label}
-                </Button>
-              ))}
+            {links.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="flex items-center gap-2 text-gray-400 hover:text-white px-2 py-1 rounded-md"
+                    >
+                      <link.icon className="h-4 w-4" />
+                      {link.label}
+                    </Link>
+                  ))}
             </nav>
           </div>
 
@@ -59,16 +60,15 @@ export function Navigation() {
                   </div>
                 </div>
                 <nav className="flex flex-col gap-2">
-                  {links.map((link) => (
-                    <Button
+                {links.map((link) => (
+                    <Link
                       key={link.href}
-                      variant="ghost"
-                      className="justify-start gap-3 text-lg hover:text-emerald-400 hover:bg-emerald-500/10"
-                      onClick={() => setIsOpen(false)}
+                      href={link.href}
+                      className="flex items-center gap-2 text-gray-400 hover:text-white px-2 py-1 rounded-md"
                     >
-                      <link.icon className="h-5 w-5" />
+                      <link.icon className="h-4 w-4" />
                       {link.label}
-                    </Button>
+                    </Link>
                   ))}
                 </nav>
               </SheetContent>
